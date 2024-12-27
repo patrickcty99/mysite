@@ -1,0 +1,23 @@
+mkdir my-blog
+cd my-blog
+touch index.html styles.css
+mkdir posts 
+
+# 初始化 git 仓库
+git init
+git add .
+git commit -m "初始化博客"
+
+# 在 GitHub 上创建新仓库后，关联并推送
+git remote add origin https://github.com/patrickcty99/mysite
+git branch -M main
+git push -u origin main 
+
+git add .
+git commit -m "添加新文章：文章标题"
+git push 
+
+echo "你的域名.com" > CNAME
+git add CNAME
+git commit -m "添加自定义域名"
+git push 
