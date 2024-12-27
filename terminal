@@ -21,3 +21,15 @@ echo "你的域名.com" > CNAME
 git add CNAME
 git commit -m "添加自定义域名"
 git push 
+
+# 删除旧的 markdown 文件
+rm posts/hello-world.md
+
+# 添加所有更改
+git add .
+
+# 提交更改
+git commit -m "修复样式和文章内容"
+
+# 推送到 GitHub
+git push origin main 
